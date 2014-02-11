@@ -1,0 +1,12 @@
+<?php $_items = $this->getItems(); ?>
+<?php if($_items->getSize()): ?>
+    <div class="sumoheavy-scrollerwidget" data-category-id="<?php echo $this->getScrollerwidgetCategory() ?>">
+        <ul class="items">
+            <?php foreach($_items as $item): ?>
+                <li class="item" data-item-id="<?php echo $item->getId() ?>">
+                    <span class="name"><?php echo $item->getName(); ?></span>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+<?php endif; ?>

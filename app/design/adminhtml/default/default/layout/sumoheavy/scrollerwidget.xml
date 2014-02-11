@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <scrollerwidgetadmin_adminhtml_category_index>
+        <reference name="content">
+            <block type="scrollerwidget/adminhtml_category" name="scrollerwidget.category" />
+        </reference>
+    </scrollerwidgetadmin_adminhtml_category_index>
+
+    <scrollerwidgetadmin_adminhtml_category_grid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="scrollerwidget/adminhtml_category_grid" name="scrollerwidget.category.grid" />
+        </block>
+    </scrollerwidgetadmin_adminhtml_category_grid>
+
+    <scrollerwidgetadmin_adminhtml_category_edit>
+        <reference name="content">
+            <block type="scrollerwidget/adminhtml_category_edit" name="scrollerwidget.category.edit" />
+        </reference>
+    </scrollerwidgetadmin_adminhtml_category_edit>
+
+    <scrollerwidgetadmin_adminhtml_item_index>
+        <reference name="content">
+            <block type="scrollerwidget/adminhtml_item" name="scrollerwidget.item" />
+        </reference>
+    </scrollerwidgetadmin_adminhtml_item_index>
+
+    <scrollerwidgetadmin_adminhtml_item_grid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="scrollerwidget/adminhtml_item_grid" name="scrollerwidget.item.grid" />
+        </block>
+    </scrollerwidgetadmin_adminhtml_item_grid>
+
+    <scrollerwidgetadmin_adminhtml_item_edit>
+        <update handle="editor"/>
+        <reference name="content">
+            <block type="scrollerwidget/adminhtml_item_edit" name="scrollerwidget.item.edit" />
+        </reference>
+    </scrollerwidgetadmin_adminhtml_item_edit>
+</layout>

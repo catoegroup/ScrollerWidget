@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <SUMOHeavy_ScrollerWidget>
+            <version>0.1.0</version>
+        </SUMOHeavy_ScrollerWidget>
+    </modules>
+
+    <global>
+        <resources>
+            <scrollerwidget_setup>
+                <setup>
+                    <module>SUMOHeavy_ScrollerWidget</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </scrollerwidget_setup>
+        </resources>
+
+        <models>
+            <scrollerwidget>
+                <class>SUMOHeavy_ScrollerWidget_Model</class>
+                <resourceModel>scrollerwidget_resource</resourceModel>
+            </scrollerwidget>
+
+            <scrollerwidget_resource>
+                <class>SUMOHeavy_ScrollerWidget_Model_Resource</class>
+                <entities>
+                    <category><table>sumoheavy_scrollerwidget_category</table></category>
+                    <item><table>sumoheavy_scrollerwidget_item</table></item>
+                </entities>
+            </scrollerwidget_resource>
+        </models>
+
+        <blocks>
+            <scrollerwidget>
+                <class>SUMOHeavy_ScrollerWidget_Block</class>
+            </scrollerwidget>
+        </blocks>
+
+        <helpers>
+            <scrollerwidget>
+                <class>SUMOHeavy_ScrollerWidget_Helper</class>
+            </scrollerwidget>
+        </helpers>
+    </global>
+
+    <admin>
+        <routers>
+            <scrollerwidgetadmin>
+                <use>admin</use>
+                <args>
+                    <module>SUMOHeavy_ScrollerWidget</module>
+                    <frontName>scrollerwidgetadmin</frontName>
+                </args>
+            </scrollerwidgetadmin>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <scrollerwidget module="SUMOHeavy_ScrollerWidget">
+                    <file>sumoheavy/scrollerwidget.xml</file>
+                </scrollerwidget>
+            </updates>
+        </layout>
+    </adminhtml>
+
+    <frontend>
+        <layout>
+            <updates>
+                <scrollerwidget module="SUMOHeavy_ScrollerWidget">
+                    <file>sumoheavy/scrollerwidget.xml</file>
+                </scrollerwidget>
+            </updates>
+        </layout>
+    </frontend>
+</config>

@@ -1,0 +1,10 @@
+.sumoheavy-scrollerwidget .sumoheavy-scrollerwidget > ul,
+.sumoheavy-scrollerwidget .sumoheavy-scrollerwidget > ul > li {
+    font-size: inherit;
+    line-height: normal;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    width: auto;
+}

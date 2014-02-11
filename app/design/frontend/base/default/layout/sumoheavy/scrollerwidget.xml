@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+
+        <reference name="root">
+            <action method="addBodyClass"><className>sumoheavy-scrollerwidget</className></action>
+        </reference>
+
+        <reference name="head">
+            <action method="addItem"><type>skin_css</type><name>sumoheavy/scrollerwidget/css/styles.css</name><params/></action>
+            <action method="addItem"><type>skin_js</type><name>sumoheavy/scrollerwidget/js/jquery-1.11.0.min.js</name><params/></action>
+            <action method="addItem"><type>skin_js</type><name>sumoheavy/scrollerwidget/js/jquery.vticker.min.js</name><params/></action>
+            <action method="addItem"><type>skin_js</type><name>sumoheavy/scrollerwidget/js/scripts.js</name><params/></action>
+        </reference>
+
+    </default>
+</layout>
